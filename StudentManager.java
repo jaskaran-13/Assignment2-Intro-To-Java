@@ -19,3 +19,12 @@ public class StudentManager {
     public void removeStudent(String id) {
         students.removeIf(student -> student.getId().equals(id));
     }
+    // Step 4: Search Student by ID
+    public Student searchStudent(String id) {
+        for (Student student : students) {
+            if (student.getId().equals(id)) {
+                return student;
+            }
+        }
+        return null;
+    }
