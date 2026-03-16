@@ -1,8 +1,3 @@
-// =======================================================
-// Code By: Avi Patel
-//  Inheritance Implementation
-// =======================================================
-
 // Step 1: Student class extends Person class
 
 public class Student extends Person {
@@ -19,3 +14,13 @@ public class Student extends Person {
     public String getCourse() {
         return course;
     }
+
+    // Step 4: Method overriding (Polymorphism)
+    @Override
+    public String getDetails() {
+        return "Student Name: " + getName()
+                + "\nID: " + getId()
+                + "\nEmail: " + getEmail()
+                + "\nCourse: " + course;
+    }
+}
