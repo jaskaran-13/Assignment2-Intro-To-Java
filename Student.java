@@ -14,3 +14,8 @@ public class Student extends Person {
         super(name, id, email);
         this.course = course;
     }
+
+    // Step 3:  Created Getter
+    public String getCourse() {
+        return course;
+    }
