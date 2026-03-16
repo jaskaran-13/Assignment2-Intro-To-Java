@@ -28,3 +28,17 @@ public class StudentManager {
         }
         return null;
     }
+     // Step 5: Show all students
+    public void displayStudents() {
+
+        if (students.isEmpty()) {
+            System.out.println("No students available.");
+            return;
+        }
+
+        for (Student student : students) {
+            System.out.println("----------------------");
+            System.out.println(student.getDetails());
+        }
+    }
+}
