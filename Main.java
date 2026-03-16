@@ -40,4 +40,12 @@ public class Main {
 
             // Step 7: Display Students
             manager.displayStudents();
+} catch (Exception e) {
 
+            // Step 8: Exception Handling
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        scanner.close();
+    }
+}
