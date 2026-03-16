@@ -16,3 +16,8 @@ public class InputValidator {
     public static boolean validateEmail(String email) {
         return Pattern.matches("^[A-Za-z0-9+_.-]+@(.+)$", email);
     }
+     // Step 3: Validate Name, allowing only letters and spaces
+    public static boolean validateName(String name) {
+        return Pattern.matches("[A-Za-z ]+", name);
+    }
+}
