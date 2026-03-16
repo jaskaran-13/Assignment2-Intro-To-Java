@@ -8,7 +8,11 @@ import java.util.regex.Pattern;
 
 public class InputValidator {
 
-    s
+    // Step 1: Validate Student ID (Format S-1234)
     public static boolean validateStudentID(String id) {
         return Pattern.matches("S-\\d{4}", id);
+    }
+    // Step 2:  code to Validate Email
+    public static boolean validateEmail(String email) {
+        return Pattern.matches("^[A-Za-z0-9+_.-]+@(.+)$", email);
     }
