@@ -1,21 +1,35 @@
 // =======================================================
-// Code By: Avi Patel
-//  Inheritance Implementation
+
+// Code by: Avi Patel
+// Role: OOP Design (Abstract Class, Encapsulation)
 // =======================================================
 
-// Step 1: Student class extends Person class
+// Step 1: Create abstract base class Person
+// This acts as a blueprint for Student and Instructor classes
 
-public class Student extends Person {
+public abstract class Person {
 
-    private String course;
+    // Step 2: Private fields (Encapsulation)
+    private String name;
+    private String id;
+    private String email;
 
-    // Step 2:  created Constructor
-    public Student(String name, String id, String email, String course) {
-        super(name, id, email);
-        this.course = course;
+    // Step 3: Constructor to initialize fields
+    public Person(String name, String id, String email) {
+        this.name = name;
+        this.id = id;
+        this.email = email;
     }
 
-    // Step 3:  Created Getter
-    public String getCourse() {
-        return course;
+    // Step 4: Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getEmail() {
+        return email;
     }
