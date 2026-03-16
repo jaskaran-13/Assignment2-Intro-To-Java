@@ -21,3 +21,14 @@ public class Main {
             if (!InputValidator.validateName(name)) {
                 throw new Exception("Invalid Name Format");
             }
+              // Step 3: Enter  Email
+            System.out.print("Enter Email: ");
+            String email = scanner.nextLine();
+
+            if (!InputValidator.validateEmail(email)) {
+                throw new Exception("Invalid Email Format");
+            }
+
+            // Step 4: Enter name of the Course
+            System.out.print("Enter Course: ");
+            String course = scanner.nextLine();
