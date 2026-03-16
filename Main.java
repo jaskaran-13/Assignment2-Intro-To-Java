@@ -21,6 +21,13 @@ public class Main {
             if (!InputValidator.validateName(name)) {
                 throw new Exception("Invalid Name Format");
             }
+             // Step 2: Input Student ID
+            System.out.print("Enter Student ID (S-1234): ");
+            String id = scanner.nextLine();
+
+            if (!InputValidator.validateStudentID(id)) {
+                throw new Exception("Invalid Student ID Format");
+            }
               // Step 3: Enter  Email
             System.out.print("Enter Email: ");
             String email = scanner.nextLine();
