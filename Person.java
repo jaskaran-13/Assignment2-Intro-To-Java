@@ -1,6 +1,6 @@
 // =======================================================
 
-// Code by: Avi Patel
+// Author: Avi Patel
 // Role: OOP Design (Abstract Class, Encapsulation)
 // =======================================================
 
@@ -33,3 +33,7 @@ public abstract class Person {
     public String getEmail() {
         return email;
     }
+
+    // Step 5: Abstract method for polymorphism
+    public abstract String getDetails();
+}
