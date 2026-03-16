@@ -11,3 +11,13 @@ public class Instructor extends Person {
         super(name, id, email);
         this.department = department;
     }
+
+    // Method overriding
+    @Override
+    public String getDetails() {
+        return "Instructor Name: " + getName()
+                + "\nID: " + getId()
+                + "\nEmail: " + getEmail()
+                + "\nDepartment: " + department;
+    }
+}
